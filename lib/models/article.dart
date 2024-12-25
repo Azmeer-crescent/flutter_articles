@@ -1,6 +1,6 @@
 /// Article data object
 /// 
-/// Also known as structure or schema 
+/// Also known as structure or schema. 
 /// Also contains [Article.fromJson] factory method
 class Article {
   final int id;

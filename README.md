@@ -12,7 +12,14 @@ A multi page Flutter app showing API consumption and state management.:
 - Refer the pubspec.yaml for other dependencies (ie: [http](https://pub.dev/packages/http), [get](https://pub.dev/packages/get), [google_fonts](https://pub.dev/packages/google_fonts))
  - You may generate Dart documentation by typing `dart doc` within the console and observe the `\doc\api\index.html` file for more information.
 
-## Data object (schema)
+## Folder structure
+- `\lib\controllers` GetX controller files.
+- `\lib\models` Model (or data object) files.
+- `\lib\screens` UI screens (or route) files.
+
+## Article model 
+Also known as data object or schema.
+
 'userId' is ignored.
 ```
 [

@@ -1,4 +1,4 @@
-import 'package:articles/Article.dart';
+import 'package:articles/models/article.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';

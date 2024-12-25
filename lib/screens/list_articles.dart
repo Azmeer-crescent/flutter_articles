@@ -1,5 +1,5 @@
-import 'package:articles/ViewArticle.dart';
-import 'controllers/article_controller.dart';
+import 'package:articles/screens/view_article.dart';
+import '../controllers/article_controller.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
