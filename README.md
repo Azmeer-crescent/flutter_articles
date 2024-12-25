@@ -29,3 +29,9 @@ A multi page Flutter app showing API consumption and state management.:
     },
 ]
 ```
+## Sample screens
+#### Article list screen. Click on a title to goto next screen.
+![image info](./ListArticles.png)
+
+#### Article view screen. Click 'Go back' button to go to 'Article List' screen
+![image info](./ViewArticle.png)
