@@ -1,0 +1,3 @@
+# identify project as Dart for GitHub
+* linguist-vendored
+*.dart linguist-vendored=false
