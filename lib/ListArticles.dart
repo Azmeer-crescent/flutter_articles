@@ -4,6 +4,11 @@ import 'controllers/article_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+/// ListArticles
+/// 
+/// This act as the home page showing a list of article titles
+/// Replace the subtitle with useful data
+/// Calls the [ArticleController] to fetch data from remote API
 class ListArticles extends StatelessWidget {
   const ListArticles({super.key});
 
@@ -17,6 +22,7 @@ class ListArticles extends StatelessWidget {
         ),
         body: Obx(() {
           if (controller.isLoading.value) {
+            //loading icon is displayed
             return Center(child: CircularProgressIndicator());
           } else if (controller.articles.isEmpty) {
             return Center(child: Text('No data available.'));
@@ -28,6 +34,7 @@ class ListArticles extends StatelessWidget {
                   title: Text(controller.articles[index].title),
                   subtitle: Text('sub title here'),
                   onTap: () {
+                    //Goto next route to display the selected record
                     Get.to(ViewArticle(),
                         arguments: controller.articles[index]);
                   },

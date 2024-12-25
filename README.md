@@ -10,6 +10,7 @@ A multi page Flutter app showing API consumption and state management.:
 - /lib/controllers/article_controller.dart fetches the data with a Future ansyc/await system
 - Uses [GetX](https://pub.dev/packages/get) for state management 
 - Refer the pubspec.yaml for other dependencies (ie: [http](https://pub.dev/packages/http), [get](https://pub.dev/packages/get), [google_fonts](https://pub.dev/packages/google_fonts))
+ - You may generate Dart documentation by typing `dart doc` within the console and observe the `\doc\api\index.html` file for more information.
 
 ## Data object (schema)
 'userId' is ignored.
@@ -31,7 +32,7 @@ A multi page Flutter app showing API consumption and state management.:
 ```
 ## Sample screens
 #### Article list screen. Click on a title to goto next screen.
-![image info](./ListArticles.png)
+![List articles screen](./ListArticles.png)
 
 #### Article view screen. Click 'Go back' button to go to 'Article List' screen
-![image info](./ViewArticle.png)
+![View one article screen](./ViewArticle.png)

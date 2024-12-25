@@ -5,6 +5,11 @@ import 'package:articles/ListArticles.dart';
 
 void main() => runApp(MyApp());
 
+/** MyApp
+ 
+ The main entry point
+ Uses GetX for state management
+*/
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

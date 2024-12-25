@@ -2,6 +2,10 @@ import 'package:articles/Article.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+/// ViewArticle
+/// 
+/// Shows one article
+/// Data is received from ArticleList route as an object
 class ViewArticle extends StatelessWidget {
   const ViewArticle({super.key});
 
@@ -14,7 +18,7 @@ class ViewArticle extends StatelessWidget {
         title: Text('View an Article'),
       ),
       body: Card(
-        elevation: 4.0, // Set the elevation for the card shadow
+        elevation: 4.0, /// Set the elevation for the card shadow
         margin: EdgeInsets.all(16.0), // Set the margin around the card
         child: Column(
           children: [
@@ -23,7 +27,7 @@ class ViewArticle extends StatelessWidget {
               subtitle: Text(article.id.toString()),
               leading: Icon(Icons.book),
             ),
-            Divider(), // Add a divider between the ListTile and other content
+            Divider(), /// Add a divider between the ListTile and other content
             Padding(
               padding: EdgeInsets.all(16.0),
               child: Text(

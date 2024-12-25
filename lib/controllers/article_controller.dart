@@ -3,6 +3,12 @@ import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+/// ArticleController
+/// 
+/// Fetches data from [remote API](https://jsonplaceholder.typicode.com/posts)
+/// If you wish to replace this, make sure to update the [Article] data object as well
+/// Uses Future with async/await for synchronous call
+/// Check the console output for any errors
 class ArticleController extends GetxController {
   var articles = <Article>[].obs;
   // var articles = <String>[].obs;

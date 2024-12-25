@@ -1,5 +1,5 @@
 name: articles
-description: "A new Flutter project."
+description: "A multi page Flutter app showing API consumption and state management."
 publish_to: 'none'
 version: 0.1.0
 
