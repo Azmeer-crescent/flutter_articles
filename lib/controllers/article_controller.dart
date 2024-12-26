@@ -5,14 +5,13 @@ import 'dart:convert';
 
 /// ArticleController
 /// 
-/// Fetches data from [remote API](https://jsonplaceholder.typicode.com/posts)
-/// If you wish to replace this, make sure to update the [Article] data object as well
+/// Fetches data from [remote API end point](https://jsonplaceholder.typicode.com/posts)
+/// If you wish to replace this, make sure to update the [Article] model as well
 /// Uses Future with async/await for synchronous call
 /// Check the console output for any errors
 class ArticleController extends GetxController {
-  var articles = <Article>[].obs;
-  // var articles = <String>[].obs;
-  var isLoading = true.obs;
+  var articles = <Article>[].obs; //this is a state variable, ie: available to all widgets. It keeps the downloaded data.
+  var isLoading = true.obs; //this is a state variable. It indicates whether the widegt is busy loading or loading is complete from remote server.
 
   @override
   void onInit() {
@@ -20,6 +19,13 @@ class ArticleController extends GetxController {
     fetchArticles();
   }
 
+/**
+ * fetchArticles
+ * 
+ * This function reads `post` records from the remote API end point. 
+ * Http status code 200 means all is good. 
+ * [Read here for more details:](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+ */
   Future<void> fetchArticles() async {
     const apiUrl = 'https://jsonplaceholder.typicode.com/posts'; // Example API
     try {
